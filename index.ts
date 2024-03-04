@@ -40,7 +40,9 @@ io.on("connection", (socket) => {
 
     socket.on('clear',()=>io.emit('clear'))
   });
-  
+  app.get('/',async(req,res)=>{
+    res.send('jai shree ram')
+  })
 server.listen(3001,()=>{
     console.log('listening on 3001')
 })
